@@ -21,7 +21,11 @@ What this line does:
 * `xargs` takes that pipe, and turns it into an argument
 * `docker run nerdalize/psspred` runs the docker image essentially with that argument, like: `docker run nerdalize/psspred BASE64STRING`
 
-In the run.sh script we decode that input string again and write it to the inputfile.
+In the run.sh script we decode that input string again and write it to the inputfile. 
+
+## results
+
+PSSpred.pl will output a couple of files in /workdir/. Amongst others there will be seq.dat.ss (the usefull result).
 
 # ToDo:
 (exercise for the reader)
