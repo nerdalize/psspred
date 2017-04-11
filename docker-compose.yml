@@ -1,0 +1,2 @@
+psspred-nlzd:
+  image: dhrp/psspred:nerdalized
