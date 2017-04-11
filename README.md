@@ -19,9 +19,9 @@ What this line does:
 * `cat` reads the input of sequence.fa and prints it to stdout
 * `base64` base64-encodes that string, this is important, as otherwise the newlines will break things
 * `xargs` takes that pipe, and turns it into an argument
-* `docker run nerdalize/psspred` runs the docker image essentially like: `docker run nerdalize/psspred BASE64STRING`
+* `docker run nerdalize/psspred` runs the docker image essentially with that argument, like: `docker run nerdalize/psspred BASE64STRING`
 
-In the run.sh script we write BASE64 --decode that input string and write it to the inputfile.
+In the run.sh script we decode that input string again and write it to the inputfile.
 
 # ToDo:
 (exercise for the reader)
